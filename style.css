@@ -1,0 +1,190 @@
+/* universal: styling regardless of location */
+body {
+  background: #3a3a3a;
+  margin: 5vw 15vw;
+  padding: 0;
+
+  /*some defaults...*/
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+h1, h2, h3 {
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+
+/*h1 {
+  line-height: 20%;
+}
+
+h2 {
+  line-height: 100%;
+}*/
+
+h3 {
+  font-size: 1.5vw
+}
+
+a:link {
+  color: Black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: Black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: White;
+}
+
+
+/* header/intro styling */
+.intro {
+  /*text-align: center;*/
+  /* Background is pic from Yellowcard Concert */
+  /* background: url("http://i.imgur.com/sodLau5.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;*/
+}
+
+.intro .container {
+  /*position: relative;
+  top: 100px*/
+}
+
+.intro h1, h2, h3{
+  line-height: 20%;
+}
+
+.intro h2 {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.intro h1 {
+  color: ;
+  font-weight: 1100;
+  font-size: 6vw; /*100px;*/
+}
+
+.intro a:hover {
+  color: black;
+}
+
+/*resize headings for landscape smartphones*/
+@media screen and (max-width: 900px) {
+  h1 {
+    padding: 20px 0 0 0;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+/*resize headings for smartphones*/
+@media screen and (max-width: 500px) {
+  .intro h2, .intro h1, h3 {
+    font-weight: bold;
+  }
+
+  .intro h2 {
+    font-size: 24px;
+  }
+
+  .intro h1 {
+    padding: 15px 0 0 0;
+    /*position: relative;
+    top: 15px;*/
+    font-size: 30px;
+  }
+
+  /*h3 {
+    font-size: 24px;
+  }*/
+}
+
+/*Navigation bar */
+.navbar .col {
+  float: left;
+  padding: 0 40px 0 0;
+}
+
+/*content!*/
+.content .container {
+  padding: 5vw 0 0 0;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content .img-with-caption {
+  padding: 0 0 5vw 0;
+}
+
+.content .img-wrap-right {
+  float: right;
+  margin: 0 0 2vw 2vw;
+  max-width: 25%;
+}
+
+.content .img-wrap-left {
+  float: left;
+  margin: 0 2vw 2vw 0;
+  max-width: 25%;
+}
+
+@media screen and (max-width: 500px) {
+  .content .img-wrap-right, .content .img-wrap-left{
+    float: none;
+    max-width: 100%;
+  }
+}
+
+/*form (on contact page)*/
+input[type=text], textarea,input[type=button], input[type=submit], input[type=reset] {
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+input[type=text], textarea {
+  margin: 8px 0;
+  padding: 12px 12px;
+  width: 100%;
+  /*width: 400px;*/
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #000000;   border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/*input[type=text]:focus {
+    background-color: lightblue;
+}*/
+
+/*.message-input input[type=textarea],*/
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+
+/* will resize form so it doesn't fill the whole screen on big displays */
+@media screen and (min-width: 600px) {
+  input[type=text], textarea,input[type=button], input[type=submit], input[type=reset]
+    width: 400px;
+  }
+}

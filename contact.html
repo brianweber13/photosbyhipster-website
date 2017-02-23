@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Hipster Image: Portfolio</title>
+    
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Playfair+Display" type="text/css" 
+rel="stylesheet">-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!--Intro and Header-->
+  <div class="intro">
+	<div class="container">
+	  <h2>Brian Weber is</h2>
+	  <a href=index.html><h1>The Hipster Image</h1></a>
+	</div>
+  </div>
+
+  <!--Site navigation-->
+  <div class="navbar">
+    <div class="container">
+      <div class="col">
+        <a href=index.html><h3>work</h3></a>
+      </div>
+      <div class="col">
+        <a href=about.html><h3>about</h3></a>
+      </div>
+      <div class="col">
+        <a href=contact.html><h3>contact</h3></a>
+      </div>
+      <div class="col">
+        <a href=pricing.html><h3>pricing</h3></a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <p>
+        <form action="mailto:photosbyhipster@gmail.com" method="post" enctype="text/plain" id="usrform">
+          Your Name:<br>
+          <input type="text" name="From" required><br>
+          Your E-mail:<br>
+          <input type="text" name="Email" required><br>
+          Your Message:<br>
+          <!--<div class="message-input"><input type="textarea" name="message"></div><br>-->
+          <textarea name="Message" form="usrform"></textarea><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
